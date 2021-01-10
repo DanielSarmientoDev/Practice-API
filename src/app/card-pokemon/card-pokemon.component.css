@@ -1,14 +1,16 @@
 
-a {
+.link {
     display: block;
     padding: 3px 1em 3px;
     text-decoration: none;
+    font-style: normal;
+    color:black;
     background: linear-gradient(to left, gold, gold) no-repeat bottom center;
     background-size: 0% 3px;
     /* will not show */
     transition: 0.25s;
   }
-  a:hover {
+  .link:hover {
     background-size: 100% 3px;
     /* will expand whole width */
   }

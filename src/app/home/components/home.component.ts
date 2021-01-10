@@ -1,15 +1,14 @@
-import { responseModel } from './core/models/response.model';
-import { ApiService } from './core/services/api.services';
-
-import { Component, Output } from '@angular/core';
+import { ApiService } from './../../core/services/api.services';
+import { responseModel } from './../../core/models/response.model';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  template: '<router-outlet></router-outlet>',
-  styleUrls: ['./app.component.css']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
-export class AppComponent {
-  title = 'PracticeApi';
+export class HomeComponent implements OnInit {
+
   responseModel?: responseModel;
   constructor(private apiService: ApiService){}
   ngOnInit(): void {

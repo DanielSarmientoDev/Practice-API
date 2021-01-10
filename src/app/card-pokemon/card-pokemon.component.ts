@@ -1,5 +1,5 @@
-import { pokemonModel } from './../core/models/pokemon.model';
 import { responseModel } from './../core/models/response.model';
+import { pokemonModel } from './../core/models/pokemon.model';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -10,6 +10,11 @@ import { Component, Input, OnInit } from '@angular/core';
 export class CardPokemonComponent implements OnInit {
 
   @Input() responseModel?:pokemonModel;
+  @Input() i?: number;
+
+  countPokemon(){
+  }
+
 
   constructor() { }
 

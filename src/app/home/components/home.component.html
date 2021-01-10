@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="header">
+      <h1>POKEMON API WITH ANGULAR</h1>
+    </div>
+    <div class="cards-pokemon">
+      <app-card-pokemon 
+        *ngFor="let responseModel of responseModel?.results | slice:1; let i = index;"
+        [responseModel]="responseModel"
+        [i]="i"
+        >
+      </app-card-pokemon>
+
+    </div>
+  </div>

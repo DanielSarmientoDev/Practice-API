@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="header">
+        <a [routerLink]="['/']">Regresar</a>
+    </div>
+    <div class="card-pokemon">
+        <div class="name-pokemon">
+            <h1>{{pokemon?.name}}</h1>
+        </div>
+        <div class="abilities-pokemon">
+            <h1>abilities</h1>
+            <h2>{{pokemon?.abilities[0].ability?.name}}</h2>
+            <h2>{{pokemon?.abilities[1].ability?.name}}</h2>
+        </div>
+        <div class="experience-pokemon">
+            <h1>Base Experience</h1>
+            <h1>{{pokemon?.base_experience}}</h1>
+        </div>
+    </div>
+</div>
