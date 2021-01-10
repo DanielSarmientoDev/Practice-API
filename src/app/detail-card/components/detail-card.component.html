@@ -2,18 +2,39 @@
     <div class="header">
         <a [routerLink]="['/']">Regresar</a>
     </div>
-    <div class="card-pokemon">
-        <div class="name-pokemon">
-            <h1>{{pokemon?.name}}</h1>
+    <div class="container-pokemon">
+        <div class="section-contain">
+            <div class="card-pokemon">
+                <div class="name-pokemon">
+                    <img src="../../../assets/pokeball.png" alt="">
+                    <img src={{pokemon?.sprites?.back_default}} alt="">
+                    <h1>{{pokemon?.name}}</h1>
+                </div>
+                <div class="img-pokemon">
+                    <img src={{pokemon?.sprites?.other?.dream_world?.front_default}} alt="">
+                </div>
+                <div class="experience-pokemon">
+                    <h1>Base Experience</h1>
+                    <h1>{{pokemon?.base_experience}}</h1>
+                </div>
+            </div>
         </div>
-        <div class="abilities-pokemon">
-            <h1>abilities</h1>
-            <h2>{{pokemon?.abilities[0].ability?.name}}</h2>
-            <h2>{{pokemon?.abilities[1].ability?.name}}</h2>
-        </div>
-        <div class="experience-pokemon">
-            <h1>Base Experience</h1>
-            <h1>{{pokemon?.base_experience}}</h1>
+        <div class="card-info">
+            <div class="info-pokemon">
+                <h1>Information</h1>
+                <h2>Base happiness</h2>
+                <h3>{{pokemonSpecie?.base_happiness}}</h3>
+                <h2>Capture Rate </h2>
+                <h3>{{pokemonSpecie?.capture_rate}}</h3>
+               <h2>Color </h2>
+               <h3>{{pokemonSpecie?.color?.name}}</h3>
+               <h2>Egg groups </h2>
+               <h3>{{pokemonSpecie?.egg_groups[0]?.name}},{{pokemonSpecie?.egg_groups[1]?.name}}</h3> 
+               <h2>Habitat </h2>
+               <h3>{{pokemonSpecie?.habitat?.name}}</h3>
+                <h2>Generation </h2>
+                <h3>{{pokemonSpecie?.generation?.name}}</h3>
+            </div>
         </div>
     </div>
 </div>

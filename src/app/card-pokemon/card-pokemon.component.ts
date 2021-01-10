@@ -8,13 +8,9 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./card-pokemon.component.css']
 })
 export class CardPokemonComponent implements OnInit {
-
+  
   @Input() responseModel?:pokemonModel;
   @Input() i?: number;
-
-  countPokemon(){
-  }
-
 
   constructor() { }
 

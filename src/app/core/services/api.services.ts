@@ -1,3 +1,4 @@
+import { PokeSpecie } from './../models/atributos/PokeSpecie.model';
 import { pokemonModel } from './../models/pokemon.model';
 import { environment } from './../../../environments/environment.prod';
 import { responseModel } from './../models/response.model';
@@ -17,5 +18,8 @@ export class ApiService{
     }
     public getPokemonid(id: number){
         return this.http.get<pokemonModel>(`https://pokeapi.co/api/v2/pokemon/${id}`); 
+    }
+    public getPokemonSpecie(id:number){
+        return this.http.get<PokeSpecie>(` https://pokeapi.co/api/v2/pokemon-species/${id}`);
     }
 }

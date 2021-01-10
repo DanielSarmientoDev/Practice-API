@@ -4,4 +4,5 @@ export interface pokemonModel {
     name: string;
     moves: any[];
     base_experience: number;
+    sprites:{back_default:any,other:any;};
 }

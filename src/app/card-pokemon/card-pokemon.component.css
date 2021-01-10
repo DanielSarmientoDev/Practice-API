@@ -4,8 +4,10 @@
     padding: 3px 1em 3px;
     text-decoration: none;
     font-style: normal;
-    color:black;
-    background: linear-gradient(to left, gold, gold) no-repeat bottom center;
+    font-size: 18px;
+    font-weight: 300;
+    color:white;
+    background: linear-gradient(to left, white, white) no-repeat bottom center;
     background-size: 0% 3px;
     /* will not show */
     transition: 0.25s;
