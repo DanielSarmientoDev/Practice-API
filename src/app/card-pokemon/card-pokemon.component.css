@@ -1,0 +1,14 @@
+
+a {
+    display: block;
+    padding: 3px 1em 3px;
+    text-decoration: none;
+    background: linear-gradient(to left, gold, gold) no-repeat bottom center;
+    background-size: 0% 3px;
+    /* will not show */
+    transition: 0.25s;
+  }
+  a:hover {
+    background-size: 100% 3px;
+    /* will expand whole width */
+  }
